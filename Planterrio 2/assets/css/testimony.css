@@ -1,0 +1,85 @@
+.testimonial-section {
+    padding: 80px 20px;
+    background:  #F5E8C7;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonial-title {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #222;
+    font-weight: bold;
+}
+
+.testimonial-slider {
+    position: relative;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.testimonial-card {
+    display: none;
+    animation: fadeSlide 1s ease-in-out;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.testimonial-card.active {
+    display: block;
+}
+
+.testimonial-text {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #444;
+    font-style: italic;
+}
+
+.testimonial-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 15px 0;
+    object-fit: cover;
+}
+
+.testimonial-card h3 {
+    font-size: 1.1rem;
+    margin: 5px 0;
+    font-weight: 600;
+}
+
+.testimonial-card span {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.testimonial-dots {
+    margin-top: 20px;
+}
+
+.testimonial-dots span {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    background: brown;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.testimonial-dots span.active {
+    background: #333;
+}
+
+/* Animation */
+@keyframes fadeSlide {
+    0% {opacity: 0; transform: translateY(20px);}
+    100% {opacity: 1; transform: translateY(0);}
+}
+

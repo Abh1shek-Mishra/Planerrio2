@@ -1,0 +1,16 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color: #f5e8c7; /* Or your preferred background color */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color); /* Use the CSS variable */
+    color: #3E2C24;
+}

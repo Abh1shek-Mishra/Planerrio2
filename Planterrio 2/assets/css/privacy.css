@@ -1,0 +1,149 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Full-Width Title Section */
+.hero {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    width: 100%;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* Main Content */
+main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Alternating Text-Image Layout for Desktop */
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.text {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.image {
+    flex: 1;
+    text-align: center;
+}
+
+.image img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 8px;
+}
+
+/* Reverse Layout for Right-Left Alignment on Desktop */
+.content.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Full-Width "Have Questions?" Section */
+.full-width-section {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    width: 100%;
+    margin: 0;
+}
+
+.full-width-section hr {
+    width: 50%;
+    margin: 20px auto;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    margin: 0;
+}
+
+/* ------------------- RESPONSIVE DESIGN ------------------- */
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text {
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .image img {
+        max-width: 100%;
+    }
+
+    /* Remove reverse layout on small screens */
+    .content.reverse {
+        flex-direction: column;
+    }
+}
+
+/* Mobile Phones (480px and below) */
+@media (max-width: 480px) {
+    .hero {
+        padding: 30px 10px;
+    }
+
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    main {
+        max-width: 90%;
+        padding: 0;
+    }
+
+    /* Text first, Image below on Mobile */
+    .content, .content.reverse {
+        flex-direction: column !important;
+        text-align: center;
+    }
+
+    .content .text {
+        order: 1; /* Text appears first */
+    }
+
+    .content .image {
+        order: 2; /* Image appears below text */
+    }
+
+    .full-width-section {
+        padding: 30px 10px;
+    }
+
+    .full-width-section hr {
+        width: 70%;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}

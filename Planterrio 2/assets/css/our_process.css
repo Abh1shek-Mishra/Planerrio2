@@ -1,0 +1,75 @@
+#our-process {
+    background: #2E2E2E; /* Dark section background */
+    text-align: center;
+    padding: 40px 0; /* Removed left and right margins */
+}
+
+/* Section Title */
+.section-title {
+    color: #FFFFFF; /* White text for contrast */
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Process Container */
+.process-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Process Box - Light */
+.process-box {
+    background: #FFF8E1; /* Light Cream */
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    flex: 1 1 calc(25% - 20px); /* 4 boxes in a row for desktop */
+    min-width: 250px;
+    max-width: 280px;
+}
+
+/* Process Box Image */
+.process-box img {
+    width: 45%; /* Further reduced */
+    height: 65px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Process Box Title */
+.process-box h3 {
+    font-size: 20px;
+    color: #3E2723; /* Dark brown */
+    margin-bottom: 10px;
+}
+
+/* Process Box Paragraph */
+.process-box p {
+    font-size: 16px;
+    color: #5D4037; /* Medium brown */
+    flex-grow: 1;
+}
+
+/* Hover Effects */
+.process-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.process-box:hover img {
+    filter: brightness(80%);
+}

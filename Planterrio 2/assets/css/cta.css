@@ -1,0 +1,49 @@
+#cta {
+    width: 100%;
+    background: #222;  /* Dark background */
+    color: #fff;  /* Light text for contrast */
+    text-align: center;
+    padding: 22px 20px; /* Reduced padding to decrease height */
+}
+
+/* CTA Container */
+.cta-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* CTA Title */
+.cta-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* CTA Text */
+.cta-text {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    opacity: 0.9;
+}
+
+/* CTA Button */
+.cta-btn {
+    padding: 8px 16px; /* Reduced padding */
+    font-size: 16px; /* Smaller text */
+    font-weight: bold;
+    color: #fff;
+    background: #ff9800;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect for Button */
+.cta-btn:hover {
+    background: #e68900;  /* Slightly darker orange */
+    transform: scale(1.1);  /* More zoom effect */
+    box-shadow: 0 4px 10px rgba(255, 152, 0, 0.4);  /* Soft glow effect */
+}
+
